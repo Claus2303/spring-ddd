@@ -1,16 +1,16 @@
 package de.cschaeff.partner.spring.domain.model;
 
-import de.cschaeff.partner.spring.ddd.Entity;
-import de.cschaeff.partner.spring.ddd.ValueObject;
+import de.cschaeff.partner.spring.ddd.DDDEntity;
+import de.cschaeff.partner.spring.ddd.DDDValueObject;
 
-@Entity
-public class PartnerEntity {
+@DDDEntity
+public class Partner {
     private final PartnerId partnerId;
     private final Name name;
     private final Title title;
 
 
-    PartnerEntity(PartnerId partnerId, Name name, Title title){
+    Partner(PartnerId partnerId, Name name, Title title){
         this.partnerId = partnerId;
         this.name = name;
         this.title = title;
@@ -18,11 +18,11 @@ public class PartnerEntity {
 
 
 
-    @ValueObject
+    @DDDValueObject
     class Name{
 
     }
-    @ValueObject
+    @DDDValueObject
     class Title{
 
     }

@@ -1,8 +1,8 @@
 package de.cschaeff.partner.spring.domain.model;
 
-import de.cschaeff.partner.spring.ddd.ValueObject;
+import de.cschaeff.partner.spring.ddd.DDDValueObject;
 
-@ValueObject
+@DDDValueObject
 public class PartnerId {
-    private String partnerId;
+    private Long partnerId;
 }

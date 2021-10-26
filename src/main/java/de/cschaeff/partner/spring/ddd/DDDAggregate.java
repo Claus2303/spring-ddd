@@ -6,5 +6,5 @@ import java.lang.annotation.Target;
 
 @Target(ElementType.TYPE)
 @Documented
-public @interface Entity {
+public @interface DDDAggregate {
 }
